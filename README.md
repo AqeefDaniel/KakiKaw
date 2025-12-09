@@ -30,7 +30,38 @@ A modern, full-featured e-commerce web application built with React and Firebase
 - **PostCSS** - CSS processing
 - **Autoprefixer** - CSS vendor prefixing
 
-## 📦 Installation
+## � Programming Languages
+
+This project is built using the following languages:
+
+### Primary Languages
+- **JavaScript (JSX)** - ~90% of the codebase
+  - Main programming language for all application logic
+  - Used in React components, pages, and functionality
+  - Modern ES6+ features (arrow functions, async/await, destructuring)
+  
+- **HTML** - ~2% of the codebase
+  - Structure and markup
+  - Used in `index.html` and JSX templates
+  
+- **CSS** - ~7% of the codebase
+  - Styling and design
+  - TailwindCSS utility classes for responsive design
+  - Custom styles in `index.css`
+
+### Configuration Files
+- **JSON** - ~1% of the codebase
+  - Package management (`package.json`)
+  - Configuration files
+
+### What You Need to Know
+To work on this project, you should be familiar with:
+1. **JavaScript** - The core language
+2. **React** - JavaScript library for building user interfaces
+3. **JSX** - React's syntax extension (HTML-like syntax in JavaScript)
+4. **CSS/TailwindCSS** - For styling components
+
+## �📦 Installation
 
 ### Prerequisites
 - Node.js (v16 or higher)
