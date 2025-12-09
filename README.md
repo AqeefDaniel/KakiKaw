@@ -49,18 +49,6 @@ This project is built using the following languages:
   - TailwindCSS utility classes for responsive design
   - Custom styles in `index.css`
 
-### Configuration Files
-- **JSON** - ~1% of the codebase
-  - Package management (`package.json`)
-  - Configuration files
-
-### What You Need to Know
-To work on this project, you should be familiar with:
-1. **JavaScript** - The core language
-2. **React** - JavaScript library for building user interfaces
-3. **JSX** - React's syntax extension (HTML-like syntax in JavaScript)
-4. **CSS/TailwindCSS** - For styling components
-
 ## �📦 Installation
 
 ### Prerequisites
