@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-900;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+a.active hr {
+  display: block;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* Loading screen animations */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .animate-fadeOut {
+    animation: fadeOut 2.5s ease-in-out forwards;
+  }
+
+  /* Modern button styles */
+  @layer components {
+    .btn-primary {
+      @apply bg-gradient-to-r from-gray-900 to-gray-700 hover:from-gray-800 hover:to-gray-600 text-white font-medium px-8 py-3 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+    }
+
+    .btn-secondary {
+      @apply bg-white border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-medium px-8 py-3 rounded-lg transition-all duration-300;
+    }
+
+    .card {
+      @apply bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1;
+    }
+
+    .input-modern {
+      @apply w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-gray-900 focus:ring-2 focus:ring-gray-900 focus:ring-opacity-20 transition-all duration-200 outline-none;
+    }
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  @media (max-width:640px){
+    a.active:hover,
+    a.active {
+      background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+      color: white;
+      width: cover;
+      border-radius: 8px;
+    }
+  }
